@@ -18,6 +18,7 @@ function App() {
         <meta charSet="utf-8" />
         <meta name="description" content="this is movie app show the top 10 trend movie using 
           Mdb api,you can show the movie details and watch the trailer too on youtube"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
        </Helmet>
        <Router>
         <Switch>

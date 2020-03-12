@@ -2,6 +2,8 @@ import React from 'react';
 import {Spin} from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
 
+// here we can add any sub resude comoonents
+
 export const antIconHome = <LoadingOutlined style={{  position: "fixed",
     color: "#01d277",
     top: "50%",

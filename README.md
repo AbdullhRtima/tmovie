@@ -1,6 +1,6 @@
 ## This is simple application create with CRA BY Abdullah abu rtima
 ## visit the site here 
-[Trend movies app ]()
+[Trend movies app ](https://trendmovies.netlify.com/)
 
 This website use , [The Movie Database](https://www.themoviedb.org/documentation/api)
 
@@ -8,15 +8,12 @@ This website use , [The Movie Database](https://www.themoviedb.org/documentation
 
 - lists the current top 10 movies.
 - navigate to any of the top 10 movies for extra details.
-- SEO friendly by the magic of [Helmet]()
+- SEO friendly by the magic of [Helmet](https://www.npmjs.com/package/react-helmet)
 
 ## tech
 - I use Axios to handle the API requsts 
 - styled components to make it pretty 
-- netlify to depolyment 
-
-## Files
-
+- netlify to depolyment [Trend movies app ](https://trendmovies.netlify.com/)
 
 ## React Docs
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

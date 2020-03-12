@@ -15,7 +15,7 @@ function Details(props) {
     }); 
     const [loading, setLoading] = useState(false);
     const [error ,setErorr] = useState("");
-
+//  call all the end point at once and set theme at the state as an object 
     useEffect(() => {
         const id = props.match.params.id 
         try {

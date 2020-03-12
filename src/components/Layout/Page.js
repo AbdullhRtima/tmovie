@@ -1,6 +1,8 @@
 import React from 'react'
 import styled , { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Navbar from './Navbar';
+
+// this is oure global div that takes childe and render every where 
 const theme = {
     green: '#01d277',
     white: '#ffff',
