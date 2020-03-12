@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const MovieDetials = styled.div`
-    margin-top:5rem;
+    margin-top:10rem;
     position:relative;
     z-index:1;
     display:flex;

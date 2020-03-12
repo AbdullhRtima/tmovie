@@ -1,3 +1,24 @@
+## This is simple application create with CRA BY Abdullah abu rtima
+## visit the site here 
+[Trend movies app ]()
+
+This website use , [The Movie Database](https://www.themoviedb.org/documentation/api)
+
+## Business Requirements
+
+- lists the current top 10 movies.
+- navigate to any of the top 10 movies for extra details.
+- SEO friendly by the magic of [Helmet]()
+
+## tech
+- I use Axios to handle the API requsts 
+- styled components to make it pretty 
+- netlify to depolyment 
+
+## Files
+
+
+## React Docs
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

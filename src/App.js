@@ -1,25 +1,27 @@
-import React from 'react';
-import Page from './components/Layout/Page'
-import MovieCard from './components/Movies/MovieCard'
-import MovieDetails from './components/MovieDetails'
+import React ,{Suspense,lazy} from 'react';
+import Page from './components/Layout/Page';
+import {Spinner} from './Util/helper'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+const MovieCard = lazy(() => import('./components/Movies/MovieCard')); 
+const MovieDetails = lazy(() => import('./components/MovieDetails')); 
 
 function App() {
   return (
-    <Router>
+    <Suspense fallback={<Spinner/>}>
+       <Router>
         <Switch>
           <Page>
-            <p>hello world</p>
             <Route exact path="/" component={MovieCard} />
             <Route exact path="/movie/:id" component={MovieDetails} />
           </Page>
-      </Switch>
-    </Router>
+        </Switch>
+      </Router>
+    </Suspense>
+
   );
 }
 
