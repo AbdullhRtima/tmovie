@@ -1,7 +1,7 @@
 import React from 'react'
 import {Nav} from './styles/Nav'
 import {NavLink} from 'react-router-dom'
-import logo from '../img/logo.png';
+import logo from '../common/img/logo.png';
 // simple nav bar diplay at every page 
 function Navbar() {
     return (

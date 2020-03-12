@@ -5,7 +5,7 @@ import Similar from './Similar';
 import Recommended from './Recommended';
 import {Breaker} from '../common'
 import StarRatings from 'react-star-ratings'
-import Return from '../img/return.png'
+import Return from '../common/img/return.png'
 import{MovieDetials ,Container} from './styles/Movie';
 
 function MovieDetails({data ,loading}) {
@@ -16,6 +16,7 @@ function MovieDetails({data ,loading}) {
  const similar = data.similar.results;
  const recommended = data.recommended.results;
     return (
+      
         <Container>details
         {/* movie header start */}
         <MovieDetials>

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 function Similar({similar}) {
     const checkSimiler = similar ? similar : [];
     const similarMovie = checkSimiler.slice(0,4);
-    console.log(similarMovie)
     return (
         <div className="similerMovies">
         {similarMovie.map((data,i)=> (

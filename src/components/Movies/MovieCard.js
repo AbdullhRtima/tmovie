@@ -6,13 +6,15 @@ import StarRatings from 'react-star-ratings'
 //api
 import axios from 'axios';
 import {api} from '../../Util/api'
+
 //img 
-import video from '../img/video.png'
+import video from '../common/img/video.png'
+
 function MovieCard() {
     const [movie , setMovie] = useState([]);
     const [isLoading ,setLoading] = useState(false);
     const [error , setError] = useState("");
-
+    
     useEffect(()=>{
         try {
             const fetchMovies = async()=>{
@@ -35,7 +37,7 @@ function MovieCard() {
     return (
         <>
         {movie.map((movie,i)=> (
-        <Link to="/" className="link"  >
+        <Link to={`/movie/${movie.id}`} className="link" key={movie.id} >
         <MovieCards key={movie.id}>
             <li>
             <Card>

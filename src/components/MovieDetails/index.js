@@ -54,6 +54,4 @@ function Details(props) {
         </div>
     )
 }
-export default Details ;     {/* {details.genres.map((genre ,i )=> (
-    <span className="genre">{genre.name}</span>
-))} */}
+export default Details ;  

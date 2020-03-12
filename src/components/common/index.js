@@ -1,5 +1,5 @@
 import React from 'react';
-import clapperboard from '../img/clapperboard.png'
+import clapperboard from './img/clapperboard.png'
 
 const Breaker =({title})=> {
     return(

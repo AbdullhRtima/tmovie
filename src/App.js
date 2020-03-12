@@ -1,6 +1,7 @@
 import React ,{Suspense,lazy} from 'react';
 import Page from './components/Layout/Page';
-import {Spinner} from './Util/helper'
+import {Spinner} from './Util/helper';
+import {Helmet} from "react-helmet";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,6 +13,12 @@ const MovieDetails = lazy(() => import('./components/MovieDetails'));
 function App() {
   return (
     <Suspense fallback={<Spinner/>}>
+       <Helmet>
+        <title>Tmovie</title>
+        <meta charSet="utf-8" />
+        <meta name="description" content="this is movie app show the top 10 trend movie using 
+          Mdb api,you can show the movie details and watch the trailer too on youtube"/>
+       </Helmet>
        <Router>
         <Switch>
           <Page>
@@ -24,5 +31,4 @@ function App() {
 
   );
 }
-
 export default App;

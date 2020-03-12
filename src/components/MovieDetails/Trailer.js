@@ -5,7 +5,6 @@ export default function Trailer({trailer}) {
     const trailerInitial  = trailer ? trailer : [];
     const trailerData = trailerInitial.slice(0,1)[0];
     const trailerKey = trailerData ? trailerData : [];
-    console.log(trailerKey.key)
     return (
         <YouTube 
          className="youtube"

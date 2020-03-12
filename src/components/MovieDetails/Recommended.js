@@ -6,7 +6,7 @@ function Recommended({recommended}){
     return (
         <div className="similerMovies">
         {recommendMovie.map((data,i)=> (
-             <img className="similer-img" src={`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${data.poster_path}`} alt="reco img" />
+             <img key={data.id} className="similer-img" src={`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${data.poster_path}`} alt="reco img" />
         ))}
       </div>
     )
